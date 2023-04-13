@@ -27,7 +27,7 @@ ggplot2.
 Data sources
 
 The brazilian life expectancy information is available on
-ibge.gov.br website and at this date corresponds to 77 years (73.6 years for 
+ibge.gov.br website and at this date corresponds to 77 years (73.1 years for 
 male population).
 
 All the data about the deceased inhabitants have been collected
