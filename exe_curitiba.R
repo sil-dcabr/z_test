@@ -100,12 +100,6 @@ ggplot(data=obit, aes(x=gender,
   ylab('age') +
   ggtitle('Boxplot of age per gender')
 
-ggsave('/home/denis/aqui/first_project/boxplot_per_gender.pdf',
-       plot = last_plot(),
-       units = 'cm',
-       height = 25,
-       width = 50)  
-
 # select male and female genders separately
 only_m <- obit %>% filter(gender == "M")
 only_f <- obit %>% filter(gender == "F")
@@ -136,12 +130,6 @@ ggplot(data=only_m, aes(x=age)) +
   xlab('age') +
   ylab('counts') +
   ggtitle('Histogram of age - male sex')
-
-ggsave('/home/denis/aqui/first_project/male_histogram.pdf',
-       plot = last_plot(),
-       units = 'cm',
-       height = 25,
-       width = 50)  
 
 # density plot only_m
 ggplot(data=only_m,aes(x=age)) +
